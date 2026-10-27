@@ -1,5 +1,5 @@
 class Produto :
-    def _int__(self, codigo, nome, preco, quantidade, tipo ):
+    def __init__(self, codigo = None, nome = None, preco = 0.0, quantidade = 0, tipo = None):
         self.codigo = codigo
         self.nome = nome
         self.preco = preco
@@ -23,4 +23,12 @@ class Produto :
             return "repor estoque"
         else:
             return "ok"
-            
+
+    def entrada (self, qtd):
+        self.quantidade = (self.quantidade + qtd)
+
+    def saida (self , qtd):
+        if qtd <= self.quantidade:
+            self.quantidade = (self.quantidade - qtd)
+            return True
+        return False    

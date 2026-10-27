@@ -21,8 +21,18 @@ p3.preco = 12.50
 p3.codigo = 1236
 tipo = "fruta"
 
-print(p1.listar_produtos)
-print(p2.listar_produtos)
-print(p3.listar_produtos)
+print(p1.listar_produtos())
+print(p2.listar_produtos())
+print(p3.listar_produtos())
 
 
+p1.entrada(30)
+print(p1.listar_produtos())
+
+p1.saida(15)
+print(p1.listar_produtos())
+if p1.saida(100):
+    print("saída registrada")
+else:
+    print("saída recusada")
+    print(p1.quantidade)
