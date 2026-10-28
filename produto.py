@@ -32,3 +32,4 @@ class Produto :
             self.quantidade = (self.quantidade - qtd)
             return True
         return False    
+         
