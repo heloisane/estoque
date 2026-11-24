@@ -1,5 +1,4 @@
-# controle_acesso.py
-# Classe que guarda os usuários e cuida do login
+SSSS
 
 import secrets
 
